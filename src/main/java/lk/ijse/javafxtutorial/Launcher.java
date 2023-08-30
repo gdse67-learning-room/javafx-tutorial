@@ -22,6 +22,7 @@ public class Launcher extends Application {
 
         //set node hierarchy to the scene
         Scene scene = new Scene(rootNode);
+        scene.getStylesheets().add(Launcher.class.getResource("/style/dashboard.css").toExternalForm());
 
         stage.setTitle("Dashboard");
         stage.centerOnScreen();

@@ -1,0 +1,8 @@
+#title {
+    -fx-font-family: "DejaVu Sans";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+}
+#rootNode {
+    -fx-background-color: #95a5a6;
+}
