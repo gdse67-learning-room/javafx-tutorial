@@ -5,8 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="355.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.javafxtutorial.controller.CustomerFormController">
+<AnchorPane fx:id="itemRootNode" prefHeight="355.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.javafxtutorial.controller.ItemFormController">
    <children>
       <Label layoutX="222.0" layoutY="28.0" text="Item Form" />
       <TextField layoutX="40.0" layoutY="94.0" prefHeight="24.0" prefWidth="203.0" />
@@ -14,5 +13,6 @@
       <TextField layoutX="40.0" layoutY="166.0" prefHeight="24.0" prefWidth="203.0" />
       <TextField layoutX="285.0" layoutY="166.0" prefHeight="24.0" prefWidth="203.0" />
       <Button layoutX="426.0" layoutY="223.0" mnemonicParsing="false" style="-fx-background-color: #1abc9c;" text="Save" textFill="WHITE" />
+      <Button layoutX="355.0" layoutY="223.0" mnemonicParsing="false" onAction="#btnBackOnAction" style="-fx-background-color: #f1c40f;" text="Back" textFill="WHITE" />
    </children>
 </AnchorPane>
