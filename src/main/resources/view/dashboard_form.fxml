@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.javafxtutorial.controller.DashboardFormController">
+<AnchorPane fx:id="rootNode" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.javafxtutorial.controller.DashboardFormController">
    <children>
       <Label layoutX="167.0" layoutY="14.0" text="Sample Dashboard" textFill="#0da14f">
          <font>
@@ -20,7 +20,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="135.0" layoutY="69.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" text="Item">
+      <Button layoutX="135.0" layoutY="69.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="40.0" prefWidth="82.0" text="Item">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

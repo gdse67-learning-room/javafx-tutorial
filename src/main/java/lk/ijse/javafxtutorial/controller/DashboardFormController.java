@@ -10,11 +10,16 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class DashboardFormController {
+
+    @FXML
+    private AnchorPane rootNode;
+
     @FXML
     void btnCustomerOnAction(ActionEvent event) throws IOException {
         // open Customer Form
@@ -29,5 +34,17 @@ public class DashboardFormController {
         stage.setScene(scene);
         stage.show();
 
+    }
+
+    @FXML
+    void btnItemOnAction(ActionEvent event) throws IOException {
+        Parent rootNode = FXMLLoader.load(this.getClass().getResource("/view/item_form.fxml"));
+
+        Scene scene = new Scene(rootNode);
+
+        Stage stage = (Stage) this.rootNode.getScene().getWindow();
+
+        stage.setTitle("Item Form");
+        stage.setScene(scene);
     }
 }
