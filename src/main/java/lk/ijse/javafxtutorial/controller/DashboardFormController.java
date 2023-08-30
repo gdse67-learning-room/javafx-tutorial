@@ -21,6 +21,9 @@ public class DashboardFormController {
     private AnchorPane rootNode;
 
     @FXML
+    private AnchorPane pane;
+
+    @FXML
     void btnCustomerOnAction(ActionEvent event) throws IOException {
         // open Customer Form
 
@@ -46,5 +49,13 @@ public class DashboardFormController {
 
         stage.setTitle("Item Form");
         stage.setScene(scene);
+    }
+
+    @FXML
+    void btnSupplierOnAction(ActionEvent event) throws IOException {
+        Parent rootNode = FXMLLoader.load(this.getClass().getResource("/view/supplier_form.fxml"));
+
+        this.pane.getChildren().clear();
+        this.pane.getChildren().add(rootNode);
     }
 }
