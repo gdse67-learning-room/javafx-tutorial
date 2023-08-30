@@ -15,7 +15,7 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <Button layoutX="45.0" layoutY="69.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" text="Customer">
+      <Button layoutX="45.0" layoutY="69.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="40.0" prefWidth="82.0" text="Customer">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
